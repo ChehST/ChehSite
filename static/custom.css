@@ -1,0 +1,137 @@
+body{
+  background-color: #E8E8E8;
+}
+
+media (max-width: 768px){
+  .info-bgcard{
+    background-color: #767474;
+    padding: 10px;
+    margin-top: 200px;
+    position: absolute;
+    padding-left: 0px;
+    max-width: 349px;
+  }
+
+  .pictureHead{
+      height: 320px;
+  }
+
+  .content{
+    margin-top: 160px;
+  }
+}
+/* широкий >1400ox */
+@media (min-width: 1400px) and (max-width:4000px){
+  .info-bgcard{
+    position: absolute;
+    background-color: #767474;
+    padding: 14px;
+    max-width: 580px;
+    margin-top: 37px;
+    height: 394px;
+  }
+
+  .pictureHead{
+    height: 490px;
+    padding: 0;
+    width: 879px;
+  }
+
+  .content{
+    margin-top: 90px;
+  }
+
+
+}
+/* nm экран */
+@media (min-width: 1024px) and (max-width: 1400px){
+  .info-bgcard{
+    position: absolute;
+    background-color: #767474;
+    padding: 14px;
+    width: 40%;
+    margin-top: 21px;
+    height: 318px;
+    }
+
+  .pictureHead{
+    height: 380px;
+    padding: 0;
+    min-width: 640px;
+  }
+
+  .content{
+    margin-top: 110px;
+  }
+
+
+}
+@media (min-width: 768px) and (max-width: 1023px){
+  .info-bgcard{
+    position: absolute;
+    background-color: #767474;
+    padding: 14px;
+    max-width: 70%;
+    margin-top: 200px;
+    margin-left: 65px;
+    height: 290px;
+    }
+
+  .pictureHead{
+    height: 362px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .content{
+    margin-top: 160px;
+  }
+
+
+}
+
+/*для совсем маленьких*/
+@media (max-width: 768px){
+  .pictureHead{
+    height: 362px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .info-bgcard{
+    position: absolute;
+    max-width: 518px;
+    min-width: 310px;
+    margin-top: 220px;
+  }
+  .content{
+    margin-top: 87px;
+  }
+}
+
+.greetings{
+  margin-top: 56px
+}
+
+.pictureHead{
+  background-image: url('/static/images/3.jpg');
+  background-size: cover;
+  padding: 0;
+}
+
+.info-bgcard{
+  background-color: #767474;
+  padding: 14px;
+}
+
+.btn{
+  margin-top: 10px;
+  width: 60%;
+}
+
+.alima{
+  width: 40%;
+}
+.mail-cont{
+  margin-bottom: 0;
+}
