@@ -2,3 +2,4 @@
 **/migrations
 ChehSite/contribute.py
 *.pyc
+**/admin
