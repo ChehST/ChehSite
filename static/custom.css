@@ -37,6 +37,8 @@ media (max-width: 768px){
     width: 879px;
   }
 
+
+
   .content{
     margin-top: 90px;
   }
@@ -114,7 +116,7 @@ media (max-width: 768px){
 }
 
 .pictureHead{
-  background-image: url('/static/images/3.jpg');
+  background-image: url('/static/images/3.png');
   background-size: cover;
   padding: 0;
 }

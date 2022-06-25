@@ -2,7 +2,7 @@ body{
   background-color: #E8E8E8;
 }
 
-media (max-width: 768px){
+@media (max-width: 768px){
   .info-bgcard{
     background-color: #767474;
     padding: 10px;
@@ -114,7 +114,6 @@ media (max-width: 768px){
 }
 
 .pictureHead{
-  background-image: url('/static/images/3.jpg');
   background-size: cover;
   padding: 0;
 }
