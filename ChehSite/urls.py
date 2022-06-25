@@ -22,8 +22,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Offer.urls')),
-    path('blog/',include('blog.urls')),
-    path('stub/', views.stub, name="stub") # Пока нет вью для остальных страниц использую стаб
+    path('blog/',include('blog.urls')),    
 ] 
 
 handler404 = views.pageNotFound
