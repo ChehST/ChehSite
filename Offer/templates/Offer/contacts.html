@@ -7,5 +7,18 @@
 {% include 'Offer/greetings.html' %}
 {% endblock %}
 
-{% block content %}Тут способы связи с Чехом
+{% block content %}
+<div class="row g-5">
+	<div class="col-md-6">
+		<ul class="my-5">
+			<li class="my-2">GitHub</li>
+			<li class="my-2">Telegram</li>
+			<li class="my-2">Instagram</li>
+			<li class="my-2">Или воспользуйтесь формой отправки почты...</li>
+		</ul>
+	</div>
+	<div class="col-md-6">
+		{% include 'Offer/mailto.html' %}
+	</div>
+</div>
 {% endblock %}

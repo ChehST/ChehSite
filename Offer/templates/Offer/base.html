@@ -50,21 +50,8 @@
     {% block content %}{% endblock %}
   </div>
 
-<!-- Контейнер с формой обращения -->
-<div class="container-md mail-cont my-5">
-  <div class="container alima">
-  <h2>Свяжитесь со мной</h2>
-  <div class="row">
-    <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Ваш Email, чтобы я cмог вам ответить</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">Указанные данные используются исключительно для обоюдной, личной переписки</div>
-  </div>
-  <div class="form-group field-crq_msg required has-error"><label class="control-label" for="crq_msg">Напечатайте ваше сообщение:</label><textarea id="crq_msg" class="form-control" name="crq_msg" aria-required="true" aria-invalid="true"></textarea></div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
-</div>
-</div>
+<!-- Контейнер с формой обращения put in mailto-->
+    {% block mailto %}{% endblock %}
 
 
 <div class="container-fluid sticky-bottom bg-dark">
@@ -72,7 +59,7 @@
     <ul class="nav justify-content-center pb-3 mb-3">
       <li class="nav-item"><a href="{% url 'info' %}" class="nav-link px-2 text-muted">Информация</a></li>
       <li class="nav-item"><a href="/projects" class="nav-link px-2 text-muted">Проекты</a></li>
-      <li class="nav-item"><a href="/vacantions" class="nav-link px-2 text-muted">Вакансии</a></li>
+      <li class="nav-item"><a href="/offers" class="nav-link px-2 text-muted">Предложения</a></li>
       <li class="nav-item"><a href="{% url 'contacts' %}" class="nav-link px-2 text-muted">Контакты</a></li>
       <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link px-2 text-muted">Блог</a></li>
     </ul>

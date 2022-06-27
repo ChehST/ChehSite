@@ -1,0 +1,20 @@
+
+{% block mailto %}
+<div class="container alima my-5" style="width: 400px;">
+  <h2>Свяжитесь со мной</h2>
+  <form method="post" class="row">
+    {% csrf_token %}
+    {{ form }}
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Ваш Email, чтобы я cмог вам ответить</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Все данные защищены и не передаются третим лицам</div>
+    </div>
+    <div class="form-group field-crq_msg required has-error">
+      <label class="control-label" for="crq_msg">Напечатайте ваше сообщение:</label>
+      <textarea id="crq_msg" class="form-control" name="crq_msg" aria-required="true" aria-invalid="true"></textarea>
+    </div>
+  <button type="submit" class="btn btn-primary ms-3">Submit</button>
+  </form>
+</div>
+{% endblock %}
