@@ -7,14 +7,18 @@ def info(request):
     return render(request, 'Offer/info.html')
 
 def contacts(request):
-    return render(request, 'Offer/contacts.html')
+    error = ''
+    if request.method == 'POST':
+        form = Offers_MailForm(request.POST)
+        if form.is_valid():
+            form.save()
+        else:
+            error = 'Ошибка в форме'
 
-def sent_OfferMail(request):
     form = Offers_MailForm
 
-    data = {
-        'form':form
+    data ={
+      'form':form,
+      'error':error,
     }
-
-    return render(request, 'Offer/mailto.html', data)
-
+    return render(request, 'Offer/contacts.html',data)

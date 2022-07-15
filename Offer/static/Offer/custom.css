@@ -12,6 +12,10 @@ body{
     max-width: 349px;
   }
 
+  .sm-links{
+    width: 35%;
+  }
+
   .pictureHead{
       height: 320px;
   }
@@ -105,7 +109,7 @@ body{
     margin-top: 220px;
   }
   .content{
-    margin-top: 87px;
+    margin-top: 160px;
   }
 }
 
@@ -121,6 +125,15 @@ body{
 .info-bgcard{
   background-color: #767474;
   padding: 14px;
+}
+
+.info-bgcard h2{
+  font-family: sans-serif;
+} 
+
+.info-bgcard p{
+  font-family: unset;
+  font-size: xx-large;
 }
 
 .btn{
